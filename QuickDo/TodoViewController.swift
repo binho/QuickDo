@@ -103,7 +103,7 @@ class TodoViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[textField]-10-|", options: [], metrics: nil, views: views))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[tableView]|", options: [], metrics: nil, views: views))
-        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-10-[textField(==50)]-5-[tableView]|", options: [], metrics: nil, views: views))
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-10-[textField(==50)]-10-[tableView]|", options: [], metrics: nil, views: views))
     }
     
     // MARK: - Create, update, delete
@@ -176,11 +176,25 @@ class TodoViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         swipeCell.bgViewRightColor = UIColor(hexString: "#e74c3c")
         
         let item = results[indexPath.row]
-        
+
         swipeCell.textLabel?.numberOfLines = 0
-        swipeCell.textLabel?.font = UIFont(name: "Metric-Regular", size: 18)
         swipeCell.textLabel?.textColor = (item.done ? UIColor.lightGray : UIColor.black)
-        swipeCell.textLabel?.text = (item.done ? "🎉 \(item.text)" : item.text)
+        swipeCell.textLabel?.attributedText = self.attributedTextForTodoItem(item)
+    }
+    
+    func attributedTextForTodoItem(_ todo: Todo) -> NSAttributedString {
+        let attributes = [NSForegroundColorAttributeName: (todo.done ? UIColor.lightGray : UIColor.black),
+                          NSFontAttributeName: UIFont(name: "Metric-Regular", size: 18)]
+        
+        let attributedString = NSMutableAttributedString(string: todo.text, attributes: attributes)
+        
+        if (todo.done) {
+            attributedString.addAttribute(NSStrikethroughStyleAttributeName,
+                                          value: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue),
+                                          range: NSMakeRange(0, attributedString.length))
+        }
+        
+        return attributedString
     }
     
     // MARK: - Reveal Cell Delegate
