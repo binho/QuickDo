@@ -17,6 +17,7 @@
 		5746F5E11E0B041F00F9AD84 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746F5E01E0B041F00F9AD84 /* TodoViewController.swift */; };
 		57755CD11E0D8ACD009CA196 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57755CD01E0D8ACD009CA196 /* Todo.swift */; };
 		57755CD41E0D9329009CA196 /* TodoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57755CD31E0D9329009CA196 /* TodoItemCell.swift */; };
+		DB1C4DF685A8D79C0AEBBA10 /* Pods_QuickDoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C53DA25DF87B8AE7D904DA /* Pods_QuickDoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14C53DA25DF87B8AE7D904DA /* Pods_QuickDoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickDoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EDDA4AEDEBA67AC9B88C82 /* Pods_QuickDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		510B1E95B90032C45684076E /* Pods-QuickDoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDoTests/Pods-QuickDoTests.release.xcconfig"; sourceTree = "<group>"; };
 		5734DD491E10806900A1D414 /* UITextField+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		5734DD4B1E112F5B00A1D414 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		573E27C41E0AC0A8008EAED9 /* QuickDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,7 @@
 		5746F5E01E0B041F00F9AD84 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		57755CD01E0D8ACD009CA196 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		57755CD31E0D9329009CA196 /* TodoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemCell.swift; sourceTree = "<group>"; };
+		7592CC8393C2CA05C5A2F5D3 /* Pods-QuickDoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDoTests/Pods-QuickDoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB5FE3B3418CE51BB6FC1D /* Pods-QuickDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDo/Pods-QuickDo.release.xcconfig"; sourceTree = "<group>"; };
 		D8C6D86506F8BF709E5C4C89 /* Pods-QuickDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDo/Pods-QuickDo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1C4DF685A8D79C0AEBBA10 /* Pods_QuickDoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				44EDDA4AEDEBA67AC9B88C82 /* Pods_QuickDo.framework */,
+				14C53DA25DF87B8AE7D904DA /* Pods_QuickDoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 			children = (
 				D8C6D86506F8BF709E5C4C89 /* Pods-QuickDo.debug.xcconfig */,
 				C7FB5FE3B3418CE51BB6FC1D /* Pods-QuickDo.release.xcconfig */,
+				7592CC8393C2CA05C5A2F5D3 /* Pods-QuickDoTests.debug.xcconfig */,
+				510B1E95B90032C45684076E /* Pods-QuickDoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -188,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 573E27E41E0AC0A8008EAED9 /* Build configuration list for PBXNativeTarget "QuickDoTests" */;
 			buildPhases = (
+				E0DD0FBEE50FC805FD556950 /* [CP] Check Pods Manifest.lock */,
 				573E27D41E0AC0A8008EAED9 /* Sources */,
 				573E27D51E0AC0A8008EAED9 /* Frameworks */,
 				573E27D61E0AC0A8008EAED9 /* Resources */,
+				072F8E8CD602A0E29C80567E /* [CP] Embed Pods Frameworks */,
+				843C702C3BCAD3107838144E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +273,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		072F8E8CD602A0E29C80567E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDoTests/Pods-QuickDoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		16CC0E06C6A56A7F2611BE81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +316,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDo/Pods-QuickDo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843C702C3BCAD3107838144E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDoTests/Pods-QuickDoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0DD0FBEE50FC805FD556950 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E59D89981E7BD4B85D30903C /* [CP] Copy Pods Resources */ = {
@@ -472,8 +528,9 @@
 		};
 		573E27E51E0AC0A8008EAED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7592CC8393C2CA05C5A2F5D3 /* Pods-QuickDoTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuickDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,8 +543,9 @@
 		};
 		573E27E61E0AC0A8008EAED9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510B1E95B90032C45684076E /* Pods-QuickDoTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuickDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
