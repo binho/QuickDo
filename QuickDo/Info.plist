@@ -30,5 +30,11 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>metric-light.otf</string>
+		<string>metric-medium.otf</string>
+		<string>metric-regular.otf</string>
+	</array>
 </dict>
 </plist>

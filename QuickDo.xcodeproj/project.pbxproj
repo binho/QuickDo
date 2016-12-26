@@ -10,6 +10,9 @@
 		34067E38FCA05E55457F9742 /* Pods_QuickDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDDA4AEDEBA67AC9B88C82 /* Pods_QuickDo.framework */; };
 		5734DD4A1E10806900A1D414 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734DD491E10806900A1D414 /* UITextField+Padding.swift */; };
 		5734DD4C1E112F5B00A1D414 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734DD4B1E112F5B00A1D414 /* UIColor+Hex.swift */; };
+		5734DD521E11684700A1D414 /* metric-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5734DD4F1E11684700A1D414 /* metric-light.otf */; };
+		5734DD531E11684700A1D414 /* metric-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5734DD501E11684700A1D414 /* metric-medium.otf */; };
+		5734DD541E11684700A1D414 /* metric-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5734DD511E11684700A1D414 /* metric-regular.otf */; };
 		573E27C81E0AC0A8008EAED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E27C71E0AC0A8008EAED9 /* AppDelegate.swift */; };
 		573E27CF1E0AC0A8008EAED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573E27CE1E0AC0A8008EAED9 /* Assets.xcassets */; };
 		573E27D21E0AC0A8008EAED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573E27D01E0AC0A8008EAED9 /* LaunchScreen.storyboard */; };
@@ -35,6 +38,9 @@
 		510B1E95B90032C45684076E /* Pods-QuickDoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDoTests/Pods-QuickDoTests.release.xcconfig"; sourceTree = "<group>"; };
 		5734DD491E10806900A1D414 /* UITextField+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		5734DD4B1E112F5B00A1D414 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		5734DD4F1E11684700A1D414 /* metric-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "metric-light.otf"; sourceTree = "<group>"; };
+		5734DD501E11684700A1D414 /* metric-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "metric-medium.otf"; sourceTree = "<group>"; };
+		5734DD511E11684700A1D414 /* metric-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "metric-regular.otf"; sourceTree = "<group>"; };
 		573E27C41E0AC0A8008EAED9 /* QuickDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573E27C71E0AC0A8008EAED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573E27CE1E0AC0A8008EAED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +94,24 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		5734DD4D1E11683000A1D414 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5734DD4E1E11683000A1D414 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5734DD4E1E11683000A1D414 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5734DD4F1E11684700A1D414 /* metric-light.otf */,
+				5734DD501E11684700A1D414 /* metric-medium.otf */,
+				5734DD511E11684700A1D414 /* metric-regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		573E27BB1E0AC0A8008EAED9 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +135,7 @@
 		573E27C61E0AC0A8008EAED9 /* QuickDo */ = {
 			isa = PBXGroup;
 			children = (
+				5734DD4D1E11683000A1D414 /* Resources */,
 				5734DD481E107EE300A1D414 /* Extensions */,
 				57755CCF1E0D8AB7009CA196 /* Models */,
 				5746F5E21E0B04FB00F9AD84 /* View Controllers */,
@@ -249,6 +274,9 @@
 			files = (
 				573E27D21E0AC0A8008EAED9 /* LaunchScreen.storyboard in Resources */,
 				573E27CF1E0AC0A8008EAED9 /* Assets.xcassets in Resources */,
+				5734DD531E11684700A1D414 /* metric-medium.otf in Resources */,
+				5734DD541E11684700A1D414 /* metric-regular.otf in Resources */,
+				5734DD521E11684700A1D414 /* metric-light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

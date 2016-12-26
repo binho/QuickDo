@@ -15,6 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: "Metric-Medium", size: 20)!,
+            NSForegroundColorAttributeName: UIColor.white
+        ]
+        
+        UINavigationBar.appearance().barTintColor = UIColor(hexString: "#3498db")
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         

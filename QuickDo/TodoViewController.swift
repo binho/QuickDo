@@ -63,7 +63,8 @@ class TodoViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         textField.returnKeyType = UIReturnKeyType.done
         textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.font = UIFont.systemFont(ofSize: 22)
+        textField.font = UIFont(name: "Metric-Regular", size: 20)
+        textField.textColor = UIColor.black
         textField.setLeftPadding(10)
         textField.setRightPadding(8)
         self.view.addSubview(self.textField)
@@ -72,9 +73,9 @@ class TodoViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         textField.layer.backgroundColor = UIColor.white.cgColor
         textField.layer.masksToBounds = false
         textField.layer.cornerRadius = 6.0
-        textField.layer.shadowColor = UIColor.black.cgColor
+        textField.layer.shadowColor = UIColor(hexString: "#3498db").cgColor
         textField.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        textField.layer.shadowOpacity = 0.1
+        textField.layer.shadowOpacity = 0.2
         textField.layer.shadowRadius = 3.0
         
         tableView = UITableView()
@@ -177,7 +178,7 @@ class TodoViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         let item = results[indexPath.row]
         
         swipeCell.textLabel?.numberOfLines = 0
-        swipeCell.textLabel?.font = UIFont.systemFont(ofSize: 20)
+        swipeCell.textLabel?.font = UIFont(name: "Metric-Regular", size: 18)
         swipeCell.textLabel?.textColor = (item.done ? UIColor.lightGray : UIColor.black)
         swipeCell.textLabel?.text = (item.done ? "🎉 \(item.text)" : item.text)
     }
