@@ -16,7 +16,6 @@
 		573E27DD1E0AC0A8008EAED9 /* QuickDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E27DC1E0AC0A8008EAED9 /* QuickDoTests.swift */; };
 		5746F5E11E0B041F00F9AD84 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746F5E01E0B041F00F9AD84 /* TodoViewController.swift */; };
 		57755CD11E0D8ACD009CA196 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57755CD01E0D8ACD009CA196 /* Todo.swift */; };
-		57755CD41E0D9329009CA196 /* TodoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57755CD31E0D9329009CA196 /* TodoItemCell.swift */; };
 		DB1C4DF685A8D79C0AEBBA10 /* Pods_QuickDoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C53DA25DF87B8AE7D904DA /* Pods_QuickDoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +45,6 @@
 		573E27DE1E0AC0A8008EAED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5746F5E01E0B041F00F9AD84 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		57755CD01E0D8ACD009CA196 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		57755CD31E0D9329009CA196 /* TodoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemCell.swift; sourceTree = "<group>"; };
 		7592CC8393C2CA05C5A2F5D3 /* Pods-QuickDoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDoTests/Pods-QuickDoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB5FE3B3418CE51BB6FC1D /* Pods-QuickDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDo/Pods-QuickDo.release.xcconfig"; sourceTree = "<group>"; };
 		D8C6D86506F8BF709E5C4C89 /* Pods-QuickDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDo/Pods-QuickDo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		5746F5E21E0B04FB00F9AD84 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				57755CD21E0D92F4009CA196 /* Cell */,
 				5746F5E01E0B041F00F9AD84 /* TodoViewController.swift */,
 			);
 			name = "View Controllers";
@@ -148,14 +145,6 @@
 				57755CD01E0D8ACD009CA196 /* Todo.swift */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		57755CD21E0D92F4009CA196 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				57755CD31E0D9329009CA196 /* TodoItemCell.swift */,
-			);
-			name = Cell;
 			sourceTree = "<group>";
 		};
 		8FF3F82AFB9789F752D83517 /* Pods */ = {
@@ -374,7 +363,6 @@
 				5734DD4A1E10806900A1D414 /* UITextField+Padding.swift in Sources */,
 				57755CD11E0D8ACD009CA196 /* Todo.swift in Sources */,
 				5734DD4C1E112F5B00A1D414 /* UIColor+Hex.swift in Sources */,
-				57755CD41E0D9329009CA196 /* TodoItemCell.swift in Sources */,
 				573E27C81E0AC0A8008EAED9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
