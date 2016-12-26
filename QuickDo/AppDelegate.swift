@@ -5,15 +5,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func printFonts() {
-        for familyName in UIFont.familyNames {
-            print("\n-- \(familyName) \n")
-            for fontName in UIFont.fontNames(forFamilyName: familyName) {
-                print(fontName)
-            }
-        }
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         UINavigationBar.appearance().titleTextAttributes = [
@@ -29,8 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = UINavigationController(rootViewController: TodoViewController())
         self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
-        
-        printFonts()
         
         return true
     }
