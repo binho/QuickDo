@@ -1,38 +1,20 @@
 PODS:
   - BWSwipeRevealCell (2.0.1)
-  - Cartography (1.0.1)
-  - Jelly (1.2.0)
-  - JTAppleCalendar (6.1.1)
-  - Malert (0.1.4):
-    - Cartography (~> 1.0)
-    - OAStackView (~> 1.0)
-  - OAStackView (1.0.1)
   - Realm (2.1.2):
     - Realm/Headers (= 2.1.2)
   - Realm/Headers (2.1.2)
   - RealmSwift (2.1.2):
     - Realm (= 2.1.2)
-  - TDBadgedCell (3.0)
 
 DEPENDENCIES:
   - BWSwipeRevealCell
-  - Jelly
-  - JTAppleCalendar (~> 6.0)
-  - Malert
   - RealmSwift
-  - TDBadgedCell
 
 SPEC CHECKSUMS:
   BWSwipeRevealCell: 0918e8da129cf7af16b9bca4062b8e5a8d9ee688
-  Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
-  Jelly: 116d4d5a884295b0b0d3bb1899ebf1a86e54dfb9
-  JTAppleCalendar: fc53eb29ec81f8a90969e2d214b3aa610ab4e5b3
-  Malert: efcef5dbd31b6c6ce909ad7a96a1d5974676ef37
-  OAStackView: 95e7cb79cbea25c2342f496a44bdbe8bd4c8d510
   Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
   RealmSwift: 17d6ee30b6f9df86364408c2197492e33bfea567
-  TDBadgedCell: 8e5314066fd8c2d8b6e3fc5dec824f5ded78bdc5
 
-PODFILE CHECKSUM: 3c1ac437c1161bf4ab5260761dc635eda27deec7
+PODFILE CHECKSUM: 8a0343a41153cd5fd0249e5c485167a9bf045499
 
 COCOAPODS: 1.1.1
