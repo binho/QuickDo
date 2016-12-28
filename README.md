@@ -1,2 +1,2 @@
 Working Demo:
-![alt tag](https://github.com/binho/QuickDo/blob/master/QuickDoDemo.gif)
+![alt tag](https://github.com/binho/QuickDo/blob/master/QuickDoDemo.gif| width=100)
